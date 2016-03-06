@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="PortfolioApp">
+<head>
+  <title>Julia Pearson Portfolio</title>
+  <script src="/angular/angular.js" ></script>
+  <script src="/angular-route/angular-route.js" ></script>
+  <script src="/jquery/dist/jquery.min.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/nav_controller.js" ></script>
+  <script src="/js/projects_controller.js" ></script>
+  <link rel="stylesheet" type="text/css" href="/style/style.css">
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta charset="utf-8">
+</head>
+<body>
+<div id="nav-bar" class="full-width" ng-controller="NavController as nav">
+    <div ng-mouseover="nav.reset()" class="right reset-bottom" style="display:block;"> </div> <!--reset -->
+    <div id="menu-bar">
+      <a href="#/" ng-mouseover="nav.reset()" id="home" class="left bold green large">Julia_Pearson</a>
+      <div id="nav-button-container">
+        <div ng-mouseover="nav.reset()" class="right reset"> </div> <!-- reset -->
+        <a href="#/contact" ng-mouseover="nav.contact()" class="nav-button right nav-text-main bold grey small" id="contact">CONTACT</a> <!-- donate --> 
+        <a href="#/background"><div ng-mouseover="nav.background()" class="nav-button right nav-text-main bold grey small" id="background">BACKGROUND</div></a> <!-- background -->
+        <a href="#/projects"><div ng-mouseover="nav.projects()" class="nav-button right nav-text-main bold grey small" id="projects">PROJECTS</div></a> <!-- projects -->
+      </div> <!-- nav-button-container -->
+      <div ng-mouseover="nav.reset()" class="right reset"> </div> <!-- reset -->
+      <div ng-mouseover="nav.reset()" class="right reset-bottom"> </div> <!-- reset -->
+    </div> <!-- menu-bar -->
+    <div ng-show="nav.toggle" id="second-menu">
+      <ul id="second-nav-buttons">
+        <li ng-repeat="button in nav.secondNav[nav.whichNav]" ng-click="nav.menuVanish()" class="second-nav-button right"><a href="#/{{button}}" class="nav-text-main bold grey">{{button}}</a></li>
+        <!-- href="#/{{button}}" -->
+      </ul>
+    </div> <!-- second-menu -->
+    <div ng-mouseover="nav.reset()" class="right reset-bottom"> </div> <!-- reset -->
+  </div> <!-- navbar -->
+  <div id="main-content" class="full-width"> 
+    <div ng-view></div> <!-- template -->
+  </div> <!-- main-content -->
+</body>
+</html>
