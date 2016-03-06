@@ -18,9 +18,9 @@ PortfolioApp.config(function($routeProvider) {
     controller : 'ProjectsController as projects'
   });
 
-  $routeProvider.when('/FEED', {
-    templateUrl : 'pages/feeding.ejs',
-    controller : 'FeedingController as feed'
+  $routeProvider.when('/background', {
+    templateUrl : 'pages/background.ejs',
+    controller : 'BackgroundController as background'
   });
 
   $routeProvider.when('/comming_soon', {
