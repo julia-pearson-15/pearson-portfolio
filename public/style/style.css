@@ -142,13 +142,13 @@ body {
   float: left;
 }
 #email-container{
-  width: 40%;
+  width: 45%;
   height: 400px;
   float: right;
-  padding: 100px;
+  padding: 50px;
 }
 #contact-photo{
-  height: 400px;
+  width: 30%;
   float: right;
 }
 
@@ -194,8 +194,8 @@ body {
   height: 130px;
   width: 100%;
   text-align: center;
-  padding-top: 50px;
-  font-size: 70px;
+  padding-top: 60px;
+  font-size: 50px;
   margin-top: 200px;
 }
 .link-container{
@@ -203,4 +203,32 @@ body {
 }
 .project-git-icon{
   height: 40px;
+}
+.experience-block{
+  padding-top: 60px;
+  min-height: 150px;
+}
+#logo-container{
+  width: 200px;
+  /* height: 400px; */
+  display: block;
+  position: relative;
+  /* padding-top: 60px; */
+  /* margin: 0 auto; */
+  float: right;
+}
+.project-logo{
+  width: 70px;
+  float: left;
+  padding-bottom: 30px;
+  padding-right: 30px;
+}
+#experience-text{
+  padding-left: 60px;
+  width: 60%;
+  float: left;
+}
+.language-text{
+  color: rgb(176, 176, 176);
+  padding-bottom: 30px;
 }

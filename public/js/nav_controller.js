@@ -11,7 +11,7 @@ function NavController($http) {
 
   nav.secondNav = {
     'projects' : ['WEB DESIGN', 'JAVA', 'RUBY', 'JAVASCIPT'],
-    'background' : ['MY EDUCATION', 'TEACHING', 'NON-PROFIT', 'ENGINEERING']
+    'background' : ['MY EDUCATION', 'BUSSINESS DEV', 'TEACHING', 'WEB DEVELOPMENT']
   }
 
   nav.menuVanish = function(){
