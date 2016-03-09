@@ -1,6 +1,6 @@
 body {
   min-width: 830px;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu', sans-serif;
   color: #173e43;
 }
 .green{
@@ -8,6 +8,13 @@ body {
 }
 .grey{
   color: #173e43;
+}
+.orange{
+  font-weight: bold;
+  color: rgba(255,36,25,0.69);
+}
+.lightGrey{
+  color: rgb(176, 176, 176);
 }
 .white{
   color: white;
@@ -109,7 +116,7 @@ body {
 #nav-button-container{
   float: right;
   display: block;
-  width: 560px;
+  width: 600px;
   height: 44px;
 }
 .nav-button{
@@ -196,25 +203,26 @@ body {
   text-align: center;
   padding-top: 60px;
   font-size: 50px;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 .link-container{
   display: block;
+  height: 70px;
 }
 .project-git-icon{
   height: 40px;
 }
 .experience-block{
-  padding-top: 60px;
-  min-height: 150px;
+  min-width: 980px;
+  padding-top: 100px;
+  min-height: 300px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 #logo-container{
   width: 200px;
-  /* height: 400px; */
   display: block;
   position: relative;
-  /* padding-top: 60px; */
-  /* margin: 0 auto; */
   float: right;
 }
 .project-logo{
@@ -226,9 +234,69 @@ body {
 #experience-text{
   padding-left: 60px;
   width: 60%;
+  min-width: 700px;
   float: left;
 }
 .language-text{
   color: rgb(176, 176, 176);
   padding-bottom: 30px;
+}
+.technologies{
+  display: block;
+  height: 52px;
+}
+.technology{
+  float: left;
+  background: #3fb0ac;
+  color: white;
+  padding: 5px;
+  margin: 5px 5px 5px 5px;
+  border-radius: 3px;
+  font-size: 10px;
+}
+.name-link{
+  float: left;
+}
+#teaching-container{
+  width: 90%;
+}
+.noteable-projects{
+  text-decoration: none;
+  padding-left: 20px;
+  display: block; 
+  line-height: 1.4;
+}
+.top-twenty{
+  margin-top: 20px;
+}
+.resume{
+  width: 100px;
+}
+.two-hundred-bottom{
+  margin-bottom: 200px;
+}
+.hundred-top{
+  margin-top: 100px;
+}
+.education-icon{
+  height: 50px;
+}
+.school-text{
+  vertical-align: center;
+  padding-left: 100px;
+}
+.education-holder{
+  padding-left: 50px;
+}
+.margin-ten{
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-bottom: dotted lightgrey;
+  border-bottom-width: 2px;
+}
+.scroll-top{
+  width: 10%;
+  margin-left: 45%;
+  margin-bottom: 200px;
 }

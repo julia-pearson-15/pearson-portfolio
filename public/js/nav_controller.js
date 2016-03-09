@@ -8,10 +8,11 @@ function NavController($http) {
   nav.toggle = false;
 
   nav.whichNav = '';
+  nav.theFunction = "nav.scrollJavaScript()";
 
   nav.secondNav = {
-    'projects' : ['WEB DESIGN', 'JAVA', 'RUBY', 'JAVASCIPT'],
-    'background' : ['MY EDUCATION', 'BUSSINESS DEV', 'TEACHING', 'WEB DEVELOPMENT']
+    'projects' : ['JAVA', 'RUBY', 'JAVASCIPT'],
+    'background' : ['EDUCATION', 'TEACHING', 'BUSINESS DEV', 'WEB DEV']
   }
 
   nav.menuVanish = function(){
@@ -42,4 +43,27 @@ function NavController($http) {
     nav.toggle = true;
     nav.whichNav = 'background';
   };
+
+
+  nav.scroll = function(itemName){
+    window.setTimeout(
+      function(){
+        if(itemName == "JAVASCIPT"){
+          var $target = $("#javascript-breaker"); 
+        } else if(itemName == "RUBY"){
+          var $target = $("#ruby-breaker"); 
+        } else if(itemName == "JAVA"){
+          var $target = $("#java-breaker"); 
+        } else if(itemName == "WEB DEV"){
+          var $target = $("#web-breaker"); 
+        } else if(itemName == "TEACHING"){
+          var $target = $("#teaching-breaker"); 
+        } else if(itemName == "BUSINESS DEV"){
+          var $target = $("#bussiness-breaker"); 
+        } else if(itemName == "EDUCATION"){
+          var $target = $("#education-breaker"); 
+        }
+        $("body").animate({scrollTop: $target.offset().top}, "slow");
+      }, 400);
+  }
 }

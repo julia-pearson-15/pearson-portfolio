@@ -4,8 +4,8 @@ PortfolioApp.config(function($routeProvider) {
   $routeProvider
   // going to route '/' and getting template for home page using HomeController
   .when('/', {
-    templateUrl : 'pages/home.ejs',
-    controller : 'HomeController as home'
+    templateUrl : 'pages/projects.ejs',
+    controller : 'ProjectsController as projects'
   });
 
   $routeProvider.when('/contact', {

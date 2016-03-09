@@ -2,18 +2,21 @@
 
 <div class="project-page-container">
   <div class="intro-container">
-    <p class="same-line large">BACKGROUND INFO</p>
+    <p class="same-line large">Full stack JS and Ruby web developer with a background in business and teaching.</p>
   </div> <!-- intro-container -->
-  <div class="blue-breaker green italics">WEB DEVELOPMENT</div>
+  <div id="web-breaker" class="blue-breaker green italics">WEB DEVELOPMENT</div>
   <div id="web-experience" class="experience-block">
     <div id="experience-text">
-      <p class="same-line large">As a builder of websites, the proof is in the </p>
-      <a href="#/projects" class="same-line green large">projects</a>
-      <p class="same-line large">, which I developed using :</p>
-      <p class="small no-margin language-text">JavaScript, Node.js, Java, Angular, Ruby, Ruby-on-Rails, Sinatra, MongoDB, SQLite3, HTML, CSS, integrated APIs, AJAX, Github, and Heroku.</p>
-      <p class="same-line small">While I have sharpened my skills by building innovative applications, my </p>
-      <a href="#/projects" class="same-line green small">education</a>
-      <p class="same-line small"> demonstrates the greater depth of my knowledge.</p>
+      <p class="same-line medium">As a builder of websites, the proof is in the </p>
+      <a href="#/projects" class="same-line green medium">projects,</a>
+      <p class="same-line medium"> which I developed using :</p>
+      <p class="small no-margin language-text">  JavaScript, Node.js, Java, Angular, Ruby, Ruby-on-Rails, Sinatra, MongoDB, SQLite3, postgresql, HTML, CSS, integrated APIs, AJAX, Github, and Heroku.</p>
+      <p></p>
+      <p class="smaller no-margin">Most notable :</p>
+      <a href="#/projects" ng-click="background.scrollArk()" class="smaller lightGrey noteable-projects">The website I desgined for a non-profit and am building as a full stack JS website.</a>
+      <a href="#/projects" ng-click="background.scrollCatan()" class="smaller lightGrey noteable-projects">The full game logic, graphics, and artificial intelligence I built using Java.</a>
+      <p></p>
+      <a href="#" ng-show="background.resumeWebsiteHide" ng-click="background.resumeWeb()" id="webResume" class="fake-link smaller green italics top-twenty" style="text-decoration: none;display:block;">my resume...</a>
     </div>
     <a href="#/projects" id="logo-container">
       <img class="project-logo" src="/images/background/peoples-park-logo.png">
@@ -23,8 +26,81 @@
       <img class="project-logo" src="/images/background/catan-logo.png">
       <img class="project-logo" src="/images/background/portfolio-logo.png">
     </a>
+    <p></p>
+    <object data="/images/background/julia_pearson_resume.pdf" type="application/pdf" ng-show="background.resumeWebsite" width="100%" height="700px">
+      <p>It appears you don't have a PDF plugin for this browser.
+        No biggie... you can <a href="/images/background/julia_pearson_resume.pdf">click here to
+        download the PDF file.</a></p>
+    </object>
+    <a href="#" ng-show="background.resumeWebsite" ng-click="background.resumeWebHide()" class="fake-link small green italics top-twenty" style="text-decoration: none;display:block;">hide resume</a>
   </div> <!-- web-experience -->
-  <div class="blue-breaker green italics">TEACHING</div>
-  <div class="blue-breaker green italics">BUSSINESS DEVELOPMENT</div>
-  <div class="blue-breaker green italics">MY EDUCATION</div>
+  <div id="bussiness-breaker" class="blue-breaker green italics">BUSINESS DEVELOPMENT</div>
+  <div id="business-experience" class="experience-block">
+    <div id="business-container">
+      <div class="center">
+        <p class="same-line medium">Throughout my past three years at </p>
+        <a href="https://infinite-bastion-74553.herokuapp.com/#/" class="same-line green medium center">Advancement for Rural Kids</a>
+        <p class="same-line medium center"> (ARK) my responsibilities have been continually evolving.</p>
+      </div>
+      <p class="small no-margin italics top-twenty bold">Roles I've Had</p> 
+      <p class="smaller margin-ten"> Assessing the programs' success with data analysis and financial audits.</p>
+      <p class="smaller margin-ten"> Designing business models, which members of our partner communities could implement in order to earn needed income. </p>
+      <p class="smaller margin-ten"> Working with the co-founder to launch a venture fund that could invest in these same businesses. </p>
+      <p class="smaller margin-ten"> Piloting our first business.</p>
+      <p class="smaller margin-ten same-line "> Designing </p>
+      <a href="https://infinite-bastion-74553.herokuapp.com/#/" class="same-line green smaller" style=" border-bottom: dotted lightgrey;border-bottom-width: 2px;">  new website  </a>
+      <p class="same-line smaller" style=" border-bottom: dotted lightgrey;border-bottom-width: 2px;"> and then built it as a single page JS website to hone my Angular skills.</p>
+      <p class="smaller lightGrey">ARK is a small non-profit that runs feeding, educational, and economic programs in rural Philippines.</p>
+    </div> <!-- business-experience -->
+  </div> <!-- business-experience -->
+  <div id="teaching-breaker" class="blue-breaker green italics">TEACHING</div>
+  <div id="teaching-experience" class="experience-block">
+    <div id="teaching-container">
+      <p class="medium center">My experience tutoring in computer science and math demonstrates my understanding of the subjects and my ability to communicate complex concepts.</p>
+      <p class="small no-margin italics top-twenty bold">Most recently</p> 
+      <p class="small same-line no-margin">I am teaching </p>
+      <a href="https://generalassemb.ly/education/web-development-immersive/new-york-city" class="same-line green small">General Assembly</a>
+      <p class="same-line small small no-margin"> graduates new programming frameworks.</p>
+      <p class="smaller no-margin italics top-twenty bold">2009-2015</p> 
+      <p class="smaller  no-margin">Private Calculus tutor for high school, college, and business school students.</p>
+      <p></p>
+      <a href="#" ng-show="background.resumeTeachHide" ng-click="background.resumeTeaching()" id="teachResume" class="fake-link smaller green italics" style="text-decoration: none;">tutoring resume...</a>
+      <object data="/images/background/julia_pearson_tutoring_resume.pdf" type="application/pdf" ng-show="background.resumeTeach" width="100%" height="700px">
+        <p>It appears you don't have a PDF plugin for this browser.
+        No biggie... you can <a href="/images/background/julia_pearson_resume.pdf">click here to
+        download the PDF file.</a></p>
+      </object>
+      <a href="#" ng-show="background.resumeTeach" ng-click="background.resumeTeachingHide()" class="fake-link small medium green italics" style="text-decoration: none;">hide resume</a>
+    </div> <!-- teaching-container -->
+  </div> <!-- teaching-experience -->
+  <div id="education-breaker" class="blue-breaker green italics">MY EDUCATION</div>
+  <div id="education-experience" class="experience-block">
+    <div id="education-container">
+      <div class="center">
+        <p class="medium same-line">Studied computer science at Amherst College, where I designed my </p>  
+        <a href="#/projects" ng-click="background.scrollCatan()" class="medium green same-line" style="text-decoration: none;">senior project</a>
+        <p class="medium same-line"> in Java, then filled out my techincal skills with a Web Development Immersive at General Assembly.</p>
+      </div>
+      <div class="education-holder hundred-top">
+        <img class="education-icon left" src="/images/background/education-icons/ga.jpg">
+        <div class="school-text">
+          <p class="small no-margin italics top-twenty bold">General Assembly - Graduated January 2016</p> 
+          <p class="small same-line no-margin">WDI immersive at general assembly</p>
+        </div> <!-- school-text -->
+      </div> <!-- education-holder -->
+      <div class="education-holder">
+        <img class="education-icon left" src="/images/background/education-icons/amherst.png">
+        <div class="school-text">
+          <p class="smaller no-margin italics top-twenty bold">Amherst College - Graduated May 2015</p> 
+          <p class="smaller  no-margin">Economics and English majors with a focus in computer science.</p>
+        </div> <!-- school-text -->
+      </div> <!-- education-holder -->
+      <div class="education-holder two-hundred-bottom">
+        <img class="education-icon left" src="/images/background/education-icons/sa.jpg">
+        <div class="school-text">
+          <p class="smaller no-margin italics top-twenty bold" style="padding-top: 10px;">Saint Ann's School - Graduated May 2011</p>
+        </div> <!-- school-text -->
+      </div> <!-- education-holder -->
+  </div> <!-- education-experience -->
 </div>
+<a ng-click="background.scrollTop()" href="#" class="fake-link"><img class="scroll-top" src="/images/projects/upsidedown_arrow.png">

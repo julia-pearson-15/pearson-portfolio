@@ -8,6 +8,11 @@
   <script src="/js/app.js"></script>
   <script src="/js/nav_controller.js" ></script>
   <script src="/js/projects_controller.js" ></script>
+  <script src="/js/background_controller.js" ></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/jquery-ui.js" type="text/javascript"></script>
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700italic,700,400italic' rel='stylesheet' type='text/css'>
+  <link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/themes/blitzer/jquery-ui.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" type="text/css" href="/style/style.css">
   <meta name="viewport" content="initial-scale=1.0">
   <meta charset="utf-8">
@@ -16,7 +21,7 @@
 <div id="nav-bar" class="full-width" ng-controller="NavController as nav">
     <div ng-mouseover="nav.reset()" class="right reset-bottom" style="display:block;"> </div> <!--reset -->
     <div id="menu-bar">
-      <a href="#/" ng-mouseover="nav.reset()" id="home" class="left bold green large">Julia_Pearson</a>
+      <a href="#/" ng-mouseover="nav.reset()" id="home" class="left bold green large">Julia Pearson</a>
       <div id="nav-button-container">
         <div ng-mouseover="nav.reset()" class="right reset"> </div> <!-- reset -->
         <a href="#/contact" ng-mouseover="nav.contact()" class="nav-button right nav-text-main bold grey small" id="contact">CONTACT</a> <!-- donate --> 
@@ -28,8 +33,7 @@
     </div> <!-- menu-bar -->
     <div ng-show="nav.toggle" id="second-menu">
       <ul id="second-nav-buttons">
-        <li ng-repeat="button in nav.secondNav[nav.whichNav]" ng-click="nav.menuVanish()" class="second-nav-button right"><a href="#/{{button}}" class="nav-text-main bold grey">{{button}}</a></li>
-        <!-- href="#/{{button}}" -->
+        <li ng-repeat="button in nav.secondNav[nav.whichNav]" ng-click="nav.menuVanish()" class="second-nav-button right"><a href="#/{{nav.whichNav}}" ng-click="nav.scroll(button)" class="nav-text-main bold grey">{{button}}</a></li>
       </ul>
     </div> <!-- second-menu -->
     <div ng-mouseover="nav.reset()" class="right reset-bottom"> </div> <!-- reset -->

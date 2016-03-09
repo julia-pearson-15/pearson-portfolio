@@ -3,89 +3,171 @@
 <div class="project-page-container">
   <div class="intro-container">
     <p class="same-line large">I am a true full stack engineer with experience building whole web applications in  </p>
-    <a href="#" class="same-line green large">JavaScript</a>
+    <a ng-click="projects.scrollJavaScript()" href="#" class="fake-link same-line green large">JavaScript</a>
     <p class="same-line large">  and  </p>
-    <a href="#" class="same-line green large">Ruby</a>
+    <a ng-click="projects.scrollRuby()" href="#" class="fake-link same-line green large">Ruby</a>
     <p class="same-line large">  . I also have a background in </p>
-    <a href="#" class="same-line green large">Java</a> 
+    <a ng-click="projects.scrollJava()" href="#" class="fake-link same-line green large">Java</a> 
     <p class="same-line large">,  Python,</p>
-    <p class="same-line large">  and  </p>
-    <a href="#" class="same-line green large">web design.</a>
-    <p class="medium" style="margin-top: 70px;">My various projects<a href="#"><img id="arrow-img" class="same-line" src="/images/projects/arrow.png"></a>showcase these skills</p>
+    <p class="same-line large">  and web design</p>
+    <p class="medium" style="margin-top: 70px;">My various projects<a ng-click="projects.scrollJavaScript()" href="#" class="fake-link"><img id="arrow-img" class="same-line" src="/images/projects/arrow.png"></a>showcase these skills</p>
   </div> <!-- intro-container -->
-  <div class="blue-breaker huge green italics">JavaScript</div>
+  <div id="javascript-breaker" class="blue-breaker huge green italics">JavaScript</div>
   <div id="javascript-projects">
     <div id="ark-project" class="project-block">
         <div class="link-container">
-            <a class="de-link" href="https://infinite-bastion-74553.herokuapp.com/#/"><p class="large bold no-margin same-line">Advancement for Rural Kids</p></a>
-            <a href="https://infinite-bastion-74553.herokuapp.com/#/" class="de-link smaller italics green same-line">  -  https://infinite-bastion-74553.herokuapp.com/</a>
+            <div class="name-link">
+                <a class="de-link" href="https://infinite-bastion-74553.herokuapp.com/#/"><p class="large bold no-margin">Advancement for Rural Kids</p></a>
+                <a href="https://infinite-bastion-74553.herokuapp.com/#/" class="de-link smaller italics">https://infinite-bastion-74553.herokuapp.com/</a>
+            </div> <!-- name-link -->
             <a href="https://github.com/julia-pearson/ARK_website"> <img src="/images/contact/github-512.png" class="right project-git-icon"></a>
         </div> <!-- link-container -->
+        <div class="technologies">
+            <div class="technology">JavaScript</div>
+            <div class="technology">Node.js</div>
+            <div class="technology">Express</div>
+            <div class="technology">Angular</div>
+            <div class="technology">Data Analysis</div>
+            <div class="technology">Custum Design</div>
+            <div class="technology">Original Text</div>
+            <div class="technology">Github</div>
+        </div> <!-- technologies -->
         <div class="smaller twenty-padding">I have been working with Advancement for Rural Kids on and off for three years. This past summer I redesigned their website with enticing copy and better UI. Most recently I built it as a single page JS application.</div>
         <a class="de-link" href="https://infinite-bastion-74553.herokuapp.com/#/"><img class="project-image" src="/images/projects/ark/home.png"></a>
     </div> <!-- ark-project -->
     <div class="grey-breaker"></div>
     <div id="peoples-park" class="project-block">
         <div class="link-container">
-            <a class="de-link" href="https://peoples-park.herokuapp.com/"><p class="large bold no-margin same-line">Peoples' Park</p></a>
-            <a href="https://peoples-park.herokuapp.com/" class="de-link smaller italics green same-line">  -  https://peoples-park.herokuapp.com/</a>
+            <div class="name-link">
+                <a class="de-link" href="https://peoples-park.herokuapp.com/"><p class="large bold no-margin">Peoples' Park</p></a>
+                <a href="https://peoples-park.herokuapp.com/" class="de-link smaller italics">https://peoples-park.herokuapp.com/</a>
+            </div> <!-- name-link -->
             <a href="https://github.com/julia-pearson/peoples_park"> <img src="/images/contact/github-512.png" class="right project-git-icon"></a>
         </div> <!-- link-container -->
+        <div class="technologies">
+            <div class="technology">JavaScript</div>
+            <div class="technology">Node.js</div>
+            <div class="technology">Mongodb</div>
+            <div class="technology">AJAX</div>
+            <div class="technology">Express</div>
+            <div class="technology">HTML</div>
+            <div class="technology">Original CSS</div>
+            <div class="technology">Concept</div>
+            <div class="technology">Google API</div>
+            <div class="technology">Custum Design</div>
+            <div class="technology">Mobile Friendly</div>
+            <div class="technology">Github</div>
+        </div> <!-- technologies -->
         <p class="park-login italics grey">Guest Login</p> 
         <p class="park-login grey same-line">Username: </p> <p class="green bold same-line">jane</p>
         <p class="park-login grey same-line">Password: </p><p class="green bold same-line">frank</p>
-        <div id="park-blurb" class="smaller twenty-padding">Peoples' Park allows users to log on and see a live map of available street parking spots near them. This map is generated by other users who are leaving spots or walk by an open one on the street. Driving to Fairway in 15 minutes? Mark your spot as available in 15, it is added to the map for other users and you earn Park Points. Users can take spots they see (only one at a time) and it will disappear off other users' maps. All spots are archived 20 minutes after they opened up (because in NYC no spot is around that long), so users can go to 'spot trends' and get a better sense of when spots open up in their neighborhood.</div>
+        <div id="park-blurb" class="smaller twenty-padding">Peoples' Park is a mobile-friendly, single-page, JavaScript web application that allows users to find street parking in NYC. I worked closely with the Google Maps API but utilized my own user-driven database, which continually updates with AJAX calls. All spots are archived 20 minutes after they opened up (because in NYC no spot is around that long), so users can go to 'spot trends' and get a better sense of when spots open up in their neighborhood. Because of the archiving, the map will probably be empty when you load it. Add some spots to get a sense for the functionality!</div>
         <a class="de-link" href="https://peoples-park.herokuapp.com/"><img class="project-image" src="/images/projects/peoples_park/home_to_map.png"></a>
     </div> <!-- peoples-park -->
     <div class="grey-breaker"></div>
     <div id="portfolio-project" class="project-block">
         <div class="link-container">
-            <a class="de-link" href="https://pearson-portfolio.herokuapp.com/"><p class="large bold no-margin same-line">This Portfolio!</p></a>
-            <a href="https://pearson-portfolio.herokuapp.com/" class="de-link smaller italics green same-line">  -  https://pearson-portfolio.herokuapp.com/</a>
+            <div class="name-link">
+                <a class="de-link" href="https://pearson-portfolio.herokuapp.com/"><p class="large bold no-margin">This Portfolio!</p></a>
+                <a href="https://pearson-portfolio.herokuapp.com/" class="de-link smaller italics">https://pearson-portfolio.herokuapp.com/</a>
+            </div> <!-- name-link -->
             <a href="https://github.com/julia-pearson/pearson-portfolio"> <img src="/images/contact/github-512.png" class="right project-git-icon"></a>
         </div> <!-- link-container -->
-        <div class="smaller twenty-padding">You're looking at a fullstack, single page JS website, designed and built by yours truely.</div>
+        <div class="technologies">
+            <div class="technology">JavaScript</div>
+            <div class="technology">Node.js</div>
+            <div class="technology">Angular</div>
+            <div class="technology">Express</div>
+            <div class="technology">HTML</div>
+            <div class="technology">Original CSS</div>
+            <div class="technology">Custum Design</div>
+            <div class="technology">Github</div>
+        </div> <!-- technologies -->
+        <div class="smaller twenty-padding">You're looking at a fullstack, single page JS website, designed and built by yours truely. While I am familiar with CSS frameworks like bootstap, I built my nav bar, scroll functionality, and page layouts using Angular.</div>
         <a class="de-link" href="#"><img class="project-image" src="/images/projects/portfolio/home.png"></a>
     </div> <!-- portfolio-project -->
   </div> <!-- javascript-projects -->
-  <div class="blue-breaker huge green italics">Ruby</div>
+  <div id="ruby-breaker" class="blue-breaker huge green italics">Ruby</div>
   <div id="ruby-projects">
     <div id="wiki-project" class="project-block">
         <div class="link-container">
-            <a class="de-link" href="https://get-the-record.herokuapp.com/"><p class="large bold no-margin same-line">Get The Record Straight</p></a>
-            <a href="https://get-the-record.herokuapp.com/" class="de-link smaller italics green same-line">  -  https://get-the-record.herokuapp.com/</a>
+            <div class="name-link">
+                <a class="de-link" href="https://get-the-record.herokuapp.com/"><p class="large bold no-margin">Get The Record Straight</p></a>
+                <a href="https://get-the-record.herokuapp.com/" class="de-link smaller italics">https://get-the-record.herokuapp.com/</a>
+            </div> <!-- name-link -->            
             <a href="https://github.com/julia-pearson/family_wiki"> <img src="/images/contact/github-512.png" class="right project-git-icon"></a>
         </div> <!-- link-container -->
+        <div class="technologies">
+            <div class="technology">Ruby</div>
+            <div class="technology">Sinatra</div>
+            <div class="technology">Javascipt</div>
+            <div class="technology">SQLite3</div>
+            <div class="technology">Active Record</div>
+            <div class="technology">HTML</div>
+            <div class="technology">Original CSS</div>
+            <div class="technology">Custum Design</div>
+            <div class="technology">Original Concept</div>
+            <div class="technology">Github</div>
+        </div> <!-- technologies -->
         <p class="park-login italics grey">Guest Login</p> 
         <p class="park-login grey same-line">Username: </p> <p class="green bold same-line">Valerie Fish</p>
         <p class="park-login grey same-line">Password: </p><p class="green bold same-line">frank</p>
-        <div class="smaller twenty-padding">A collaborative writing site where familes, friends, or organizations can document and contest their history. This is a full stack Ruby website using Sinatra and a SQLite database.</div>
+        <div class="smaller twenty-padding">Get the Record is a collaborative writing site where familes, friends, or organizations can document and contest their history. This is a full stack Ruby website using Sinatra and a SQLite database.</div>
         <a class="de-link" href="https://get-the-record.herokuapp.com/"><img class="project-image" src="/images/projects/wiki/home.png"></a>
     </div> <!-- wiki-project -->
     <div class="grey-breaker"></div>
     <div id="attendence-project" class="project-block">
         <div class="link-container">
-            <a class="de-link" href="https://floating-mesa-1461.herokuapp.com/"><p class="large bold no-margin same-line">Attendance Tracker</p></a>
-            <a href="https://floating-mesa-1461.herokuapp.com/" class="de-link smaller italics green same-line">  -  https://floating-mesa-1461.herokuapp.com/</a>
+            <div class="name-link">
+                <a class="de-link" href="https://floating-mesa-1461.herokuapp.com/"><p class="large bold no-margin">Attendance Tracker</p></a>
+                <a href="https://floating-mesa-1461.herokuapp.com/" class="de-link smaller italics">https://floating-mesa-1461.herokuapp.com/</a>
+            </div> <!-- name-link -->            
             <a href="https://github.com/teamattendance/attendance_tracker_app"> <img src="/images/contact/github-512.png" class="right project-git-icon"></a>
         </div> <!-- link-container -->
+        <div class="technologies">
+            <div class="technology">Ruby</div>
+            <div class="technology">Ruby-on-Rails</div>
+            <div class="technology">Javascipt</div>
+            <div class="technology">Mongodb</div>
+            <div class="technology">Charts.js</div>
+            <div class="technology">Twillio</div>
+            <div class="technology">ActionMailer</div>
+            <div class="technology">Active Record</div>
+            <div class="technology">HTML</div>
+            <div class="technology">CSS</div>
+            <div class="technology">Github Teamwork</div>
+            <div class="technology">Strong Communication</div>
+        </div> <!-- technologies -->
         <p class="park-login italics grey">Guest Login</p> 
         <p class="park-login grey same-line">Username: </p> <p class="green bold same-line">testingemailusability@gmail.com</p>
         <p class="park-login grey same-line">Password: </p><p class="green bold same-line">test</p>
-        <div class="smaller twenty-padding">This is an attendance tracking app, which allows teachers and administrators (producers) to track their strudents' attendance.</div>
+        <div class="smaller twenty-padding">This is an attendance tracking app, which allows teachers and administrators (producers) to track their students' attendance. My team and I developed a Single Table Inherritance database to tackle the differing relationship between users and classes. We also incorperated the Twillio and ActionMailer APIs so that students' texts would interacted with their attendence records in the database.</div>
         <a class="de-link" href="https://floating-mesa-1461.herokuapp.com/"><img class="project-image" src="/images/projects/attendance/home.png"></a>
     </div> <!-- wiki-project -->
   </div> <!-- ruby-projects -->
-  <div class="blue-breaker huge green italics">Java</div>
+  <div id="java-breaker" class="blue-breaker huge green italics">Java</div>
   <div id="java-projects">
     <div id="catan-project" class="project-block">
         <div class="link-container">
-            <a class="de-link" href="https://github.com/juliaedholm/Catan2"><p class="large bold no-margin same-line">Settlers of Catan</p></a>
-            <a href="https://github.com/juliaedholm/Catan2" class="de-link smaller italics green same-line">  - https://github.com/juliaedholm/Catan2</a>
+            <div class="name-link">
+                <a class="de-link" href="https://github.com/juliaedholm/Catan2"><p class="large bold no-margin">Settlers of Catan</p></a>
+                <a href="https://github.com/juliaedholm/Catan2" class="de-link smaller italics">https://github.com/juliaedholm/Catan2</a>
+            </div> <!-- name-link -->         
             <a href="https://github.com/juliaedholm/Catan2"> <img src="/images/contact/github-512.png" class="right project-git-icon"></a>
         </div> <!-- link-container -->
-        <div class="smaller twenty-padding">Full game play and a simple AI.</div>
-        <a class="de-link" href="https://github.com/juliaedholm/Catan2"><p class="large bold no-margin same-line"><img class="project-image" src="/images/projects/catan/home.png"></a>
+        <div class="technologies">
+            <div class="technology">Java</div>
+            <div class="technology">Java GUI</div>
+            <div class="technology">Strategy</div>
+            <div class="technology">Game Logic</div>
+            <div class="technology">Interacive Graphics</div>
+            <div class="technology">AI</div>
+            <div class="technology">Github Teamwork</div>
+            <div class="technology">Strong Communication</div>
+        </div> <!-- technologies -->
+        <div class="smaller twenty-padding">My team and I began this project by building the whole game's logic and graphical user interface. Once we were able to play the game, we built a computer player who could make 'strategic' choices based on data. This data was generated by thousands of games played with all computer players. Our artificial intelligence then made choices based on which moves had lead to the most wins. The game can only be played locally but checkout out our Github page and I can always demo the game in person!</div>
+        <a class="de-link" href="https://github.com/juliaedholm/Catan2"><img class="project-image" src="/images/projects/catan/home.png"></a>
     </div> <!-- catan-project -->
   </div> <!-- java-projects -->
+  <a ng-click="projects.scrollTop()" href="#" class="fake-link"><img class="scroll-top" src="/images/projects/upsidedown_arrow.png">
 </div>
