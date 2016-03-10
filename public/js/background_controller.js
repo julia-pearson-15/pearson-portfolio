@@ -47,6 +47,15 @@ function BackgroundController() {
     var $target = $("#nav-bar");
     $("body").animate({scrollTop: $target.offset().top}, "slow");
   }
+  background.scrollTeaching = function(){
+    var $target = $("#teaching-breaker");
+    $("body").animate({scrollTop: $target.offset().top}, "slow");
+  }
+  background.scrollBussiness = function(){
+    var $target = $("#bussiness-breaker");
+    $("body").animate({scrollTop: $target.offset().top}, "slow");
+  }
+
   // disabling scroll links
   $(document).ready(function(){
     $('.fake-link').on('click',function(event){
