@@ -2,7 +2,7 @@ var PortfolioApp = angular.module('PortfolioApp', ['ngRoute']);
 
 PortfolioApp.config(function($routeProvider) {
   $routeProvider
-  // going to route '/' and getting template for home page using HomeController
+
   .when('/', {
     templateUrl : 'pages/projects.ejs',
     controller : 'ProjectsController as projects'

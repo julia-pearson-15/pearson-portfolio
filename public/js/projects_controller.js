@@ -19,6 +19,7 @@ function ProjectsController($http) {
     var $target = $("#nav-bar");
     $("body").animate({scrollTop: $target.offset().top}, "slow");
   }
+
   // disabling scroll links
   $(document).ready(function(){
     $('.fake-link').on('click',function(event){
